@@ -3,3 +3,6 @@ uvicorn==0.22.0
 beanie
 pydantic==1.10.0
 python-decouple
+pydantic[email]
+passlib
+bcrypt==3.2.2
