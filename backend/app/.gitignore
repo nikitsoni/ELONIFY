@@ -1,0 +1,6 @@
+pycache
+
+.env
+.DS_Store
+
+/fastapi-env

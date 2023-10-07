@@ -6,7 +6,7 @@ from pydantic import BaseModel, Field
 class TaskCreate(BaseModel):
     title: str = Field(..., title='Title', max_length=55, min_length=1)
     description: str = Field(..., title='Description', max_length=755, min_length=1)
-    estimated_time: str
+    estimated_time: int
     status: Optional[bool] = False
     pomodoro_config: Optional[List] = [25, 5, 10]
 
