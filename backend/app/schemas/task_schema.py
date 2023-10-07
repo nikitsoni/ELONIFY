@@ -11,7 +11,7 @@ class TaskCreate(BaseModel):
     pomodoro_config: Optional[List] = [25, 5, 10]
 
 
-class TodoUpdate(BaseModel):
+class TaskUpdate(BaseModel):
     title: str = Field(..., title='Title', max_length=55, min_length=1)
     description: str = Field(..., title='Description', max_length=755, min_length=1)
     estimated_time: str
@@ -19,8 +19,8 @@ class TodoUpdate(BaseModel):
     pomodoro_config: List = [25, 5, 10]
     
 
-class TodoOut(BaseModel):
-    todo_id: UUID
+class TaskOut(BaseModel):
+    task_id: UUID
     status: bool
     title: str
     description: str
